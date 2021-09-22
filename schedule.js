@@ -1,0 +1,14 @@
+var list = document.getElementById("topnav");
+var a = document.createElement("a");
+var li = document.createElement("li");
+li.innerHTML = "Location";
+a.appendChild(li);
+list.appendChild(a);
+a.href = "https://alorestaurant.com/";
+var newWinHeight = 500;
+var newWinWidth = 800;
+var newWinLeft = 250;
+var newWinTop = 150;
+var openOptions = `width=${newWinWidth}, height=${newWinHeight}, left=${newWinLeft}, top=${newWinTop}`;
+var newWin = window.open("calendar1.html", "Calendar Window", openOptions);
+setTimeout("newWin.close()", 5000);

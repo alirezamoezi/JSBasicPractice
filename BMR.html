@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMR Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div id="allPage">
+<h3>BMR Calculator</h3>
+<form>
+    <table>
+        <tr>
+            <td style="width: 188px">Gender: </td>
+            <td><input id="male" name="optGender" tabindex="1" type="radio" value="male">
+                Male <input id="female" name="optGender" tabindex="3" type="radio" value="female">
+                Female
+            </td>
+        </tr>
+        <tr>
+            <td>Age: </td>
+            <td><input id="age" size="1" tabindex="5" type="text"></td>
+        </tr>
+        <tr>
+            <td >Weight (In Kilogram):
+            </td>
+            <td>
+                <input name="txtWeight" id="weight" size="5" tabindex="7" type="text"></td>
+        </tr>
+        <tr>
+            <td>Height (In Centimeters):
+            </td>
+            <td>
+                <input name="txtHeight" id="height" size="5" tabindex="9" type="text"></td>
+        </tr>
+    </table>
+    <p>Please Select Your Activity Level:</p>
+    <input id="little" name="optActivity" tabindex="11" type="radio" value="little">
+    I am sedentary. (little or no exercise)
+    <br><input id="light" name="optActivity" tabindex="13" type="radio" value="light">
+    I am lightly active. (light exercise or sports 3-5 days per week)
+    <br><input id="moderate" name="optActivity" tabindex="15" type="radio" value="moderate">
+    I am moderately active. (light exercise or sports 3-5 days per week)
+    <br><input id="very" name="optActivity" tabindex="17" type="radio" value="very">
+    I am very active. (hard exercise or sports 6-7 days per week)
+    <br><input id="super" name="optActivity" tabindex="19" type="radio" value="super">
+    I am super active. (very hard exercise or sports and a physical job or 2x training)
+    <br><br><input type="submit" id="submit" value="Calculate BMR" />
+
+</form>
+
+
+
+<script src="BMR.js"></script>
+</div>
+</body>
+</html>
